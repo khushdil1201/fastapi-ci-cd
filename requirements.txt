@@ -4,6 +4,3 @@ uvicorn[standard]
 # CI
 pytest
 httpx
-isort
-flake8
-mypy

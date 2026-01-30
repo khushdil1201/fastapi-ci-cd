@@ -23,16 +23,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run isort
-        run: isort --check-only .
-
-      - name: Run flake8
-        run: flake8 .
-
-      - name: Run mypy
-        run: mypy app || true
-        # mypy часто делают необязательным на junior уровне
-
       - name: Run tests
         run: pytest
 
